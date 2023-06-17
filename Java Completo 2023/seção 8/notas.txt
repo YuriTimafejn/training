@@ -1,0 +1,2 @@
+* Não se pode chamar dentro de um método estático outro método que não seja estático também (detalhe da lingugem)
+* Caso seja necessário utilizar um método não estático de uma classe qualquer, será necessário instanciar a classe em questão.

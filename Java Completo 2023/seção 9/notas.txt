@@ -1,0 +1,7 @@
+Construtor é um método especial executado no momento da instanciação do objeto.
+
+Modificadores de acesso:
+- Sem modificador: o membro pode ser acessado dentro das classes do mesmo pacote;
+- private: só pode ser acessado na própria classe;
+- protected: o membro pode ser acessado no mesmo pacote e em subclasses de pacotes diferentes;
+- public: o membro pode ser acessado por todas as classes, contando que tenha sido importado para a classe

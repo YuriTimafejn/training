@@ -1,29 +1,25 @@
-package HackerRank;
-
 import java.util.*;
+import java.io.*;
 
-class JavaLoopsII {
-    public static void main(String[] argh) {
+class Solution{
+    public static void main(String []argh){
         Scanner in = new Scanner(System.in);
-        int t = in.nextInt();
-        for (int i = 0; i < t; i++) {
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
             int a = in.nextInt();
             int b = in.nextInt();
             int n = in.nextInt();
 
-            calculate(a, b, n);
+            for(int j=0; j<n; j++) {
+                if(j>0){
+                    System.out.print(" ");
+                }
+                a += b;
+                System.out.print(a);
+                b = b*2;
+            }
+            System.out.println();
         }
         in.close();
-    }
-
-    public static void calculate(int a, int b, int n) {
-        // a + 2^0 * b, a + 2^0 * b + 2^1 *b , ... , a + 2^0 * b + ...
-        int result = a;
-
-        for (int i = 0; i < n; i++) {
-            result += Math.pow(2, i) * b;
-            System.out.println(result + " ");
-        }
-        System.out.println();
     }
 }
